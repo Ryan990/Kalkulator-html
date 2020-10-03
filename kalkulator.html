@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+			<p>Tugas 1 : Calculator</p>
+
+			<style type="text/css">
+				table {
+					background-color: azure;
+					width: 50%;
+					padding: 10px;
+					margin: 10px
+				}
+
+				p {
+					font-size: 40px;
+				}
+
+				th {
+					font-size: 30px;
+					padding: 10px;
+				}
+
+				td {
+					font-size: 16px; 
+					padding: 10px;
+				}
+
+				* {
+					font-family: Courier;
+				}
+
+				.btn {
+					background-color: #FFF8DC;
+					width: 50px;
+					height: 30px;
+				}
+
+				.btn1 {
+					background-color:  #FFF8DC;
+					width: 100px;
+					height: 30px;
+				}
+
+				.btn2 {
+					background-color:  brown;
+					width: 100px;
+					height: 30px;
+				}
+
+				.p1 {
+					font-size: 10px;
+				}
+			</style>
+
+			<script type="text/javascript">
+				function tambah() {
+					var angka1=parseFloat(document.Calculator.angka1.value);
+					var angka2=parseFloat(document.Calculator.angka2.value);
+					var hasil = angka1 + angka2;
+					document.Calculator.hasil.value=hasil;
+				}
+
+				function kurang() {
+					var angka1=parseFloat(document.Calculator.angka1.value);
+					var angka2=parseFloat(document.Calculator.angka2.value);
+					var hasil = angka1 - angka2;
+					document.Calculator.hasil.value=hasil;
+				}
+
+				function kali() {
+					var angka1=parseFloat(document.Calculator.angka1.value);
+					var angka2=parseFloat(document.Calculator.angka2.value);
+					var hasil = angka1 * angka2;
+					document.Calculator.hasil.value=hasil;
+				}
+
+				function bagi() {
+					var angka1=parseFloat(document.Calculator.angka1.value);
+					var angka2=parseFloat(document.Calculator.angka2.value);
+					var hasil = angka1 / angka2;
+					document.Calculator.hasil.value=hasil;
+				}
+
+				function persen() {
+					var angka1=parseFloat(document.Calculator.angka1.value);
+					var angka2=parseFloat(document.Calculator.angka2.value);
+					var hasil = angka1 / angka2 * 100;
+					document.Calculator.hasil.value=hasil;
+				}
+
+				function pangkat2() {
+					var angka1=parseFloat(document.Calculator.angka1.value);
+					var angka2=parseFloat(document.Calculator.angka2.value);
+					var hasil = angka1 * angka1;
+					document.Calculator.hasil.value=hasil;
+				}
+
+				function pangkat3() {
+					var angka1=parseFloat(document.Calculator.angka1.value);
+					var angka2=parseFloat(document.Calculator.angka2.value);
+					var hasil = angka1 * angka1 * angka1;
+					document.Calculator.hasil.value=hasil;
+				}
+			</script>
+	</head>
+
+	<body>
+		<form name="Calculator">
+			<table border="5" align="center">
+				<tr>
+					<th colspan="3">Calculator Happy :)</th>
+				</tr>
+
+				<tr>
+					<td align="center" width="10%">Angka 1</td>
+					<td align="center" width="10%">Angka 2</td>
+					<td align="center" width="30%">Hasil</td>
+				</tr>
+
+				<tr>
+					<td align="center"><input type="number" name="angka1"></td>
+					<td align="center"><input type="number" name="angka2"></td>
+					<td align="center"><input type="number" name="hasil" disabled=""></td>
+				</tr>
+				
+				<tr>
+					<td colspan="3">
+						<input class="btn" type="button" onclick="tambah()" value="+">
+						<input class="btn" type="button" onclick="kurang()" value="-">
+						<input class="btn" type="button" onclick="kali()" value="*">
+						<input class="btn" type="button" onclick="bagi()" value="/">
+						<input class="btn" type="button" onclick="persen()" value="%">
+						<input class="btn1" type="button" onclick="pangkat2()" value="x^2(Angka1)">
+						<input class="btn1" type="button" onclick="pangkat3()" value="x^3(Angka1)">
+						<input class="btn2" type="reset" value="Reset">
+					</td>	
+				</tr>
+			</table>	
+		</form>
+
+		<P1> Ryan Renaldy Siematauw (672018096)</P1>
+		
+	</body>
+</html>
